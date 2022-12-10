@@ -53,5 +53,18 @@ export const statementList: StatementModel[] = [
         moreText: `Read News coverage`,
         contentUrl: `https://www.youtube.com/watch?v=UrfvR2Wq5Yg`
     }),
+    new StatementModel({
+        modelName: "more",
+        text: `Do you know opinion detainees that should be on this link? Check fill the form blow and we will be in touch`,
+        url: `https://forms.gle/oxFQAbthCy22gh439`,
+        title: ``,
+        subtitle: ``,
+        image: `/assets/img/forground/more.webp`,
+        imageStyle: `max-width: 50%;"`,
+        isFree: ``,
+        arrestedFor: ``,
+        moreText: `Fill the form`,
+        contentUrl: ``
+    }),
 
 ]

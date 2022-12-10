@@ -1,4 +1,4 @@
-export type modelNames = '' | 'ahmed-daud' | 'mohamed-khayre' | 'nada-galow' | 'abdi-abees';
+export type modelNames = '' | 'more' | 'ahmed-daud' | 'mohamed-khayre' | 'nada-galow' | 'abdi-abees';
 export class StatementModel {
     readonly text: string;
     readonly url: string;

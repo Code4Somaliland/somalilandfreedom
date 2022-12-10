@@ -34,7 +34,7 @@
 				{model.isFree == '🔴' ? 'Still under arrest' : ''}
 				{model.isFree == '🟡' ? 'In Exile' : ''}
 				{model.isFree == '🟢' ? 'Currently free' : ''}
-				<p>Arrested: {model.arrestedFor ?? ''}</p>
+				<p>{model.arrestedFor ? 'Arrested for' : ''} {model.arrestedFor ?? ''}</p>
 				<a href={model.url} target="_blank" title={model.title}>
 					<h6>
 						{model.moreText}
@@ -43,14 +43,16 @@
 						</svg>
 					</h6>
 				</a>
-				<a href={model.contentUrl} target="_blank" title={model.title}>
-					<h6>
-						Content that got {model.title} arrested
-						<svg class="fa-external-link">
-							<use xlink:href="#fa-external-link" />
-						</svg>
-					</h6>
-				</a>
+				{#if model.contentUrl}
+					<a href={model.contentUrl} target="_blank" title={model.title}>
+						<h6>
+							Content that got {model.title} arrested
+							<svg class="fa-external-link">
+								<use xlink:href="#fa-external-link" />
+							</svg>
+						</h6>
+					</a>
+				{/if}
 			</blockquote>
 		</div>
 	</div>

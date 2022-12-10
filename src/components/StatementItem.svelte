@@ -6,7 +6,7 @@
 <li>
 	<a href="/{model.modelName}">
 		<figure>
-			<span>{model.country ?? ''} </span>
+			<span>{model.isFree ?? ''} </span>
 			{#if model.image}
 				<img alt="Thumbnail" src={model.image} />
 			{/if}

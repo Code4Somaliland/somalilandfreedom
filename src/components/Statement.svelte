@@ -5,14 +5,14 @@
 
 <header>
 	<div class="alignright">
-				<a href="/">
-					<h2>
-						<svg class="fa-bars">
-							<use xlink:href="#fa-bars" />
-						</svg>
-					</h2>
-				</a>
-			</div>
+		<a href="/">
+			<h2>
+				<svg class="fa-bars">
+					<use xlink:href="#fa-bars" />
+				</svg>
+			</h2>
+		</a>
+	</div>
 </header>
 <svelte:head>
 	<title>{model.title}</title>
@@ -20,15 +20,21 @@
 
 <section class="bg-secondary">
 	<div class="wrap">
-		<div class="card-50">			
-				<figure>
-					<img src={model.image} alt={model.title} style={model.imageStyle} />
-				</figure>
-				<blockquote>
-					<p>
-						&ldquo;{model.text}&rdquo;
-					</p>
-					<p><cite>{model.title} ({model.subtitle})</cite></p>
+		<div class="card-50">
+			<figure>
+				<img src={model.image} alt={model.title} style={model.imageStyle} />
+			</figure>
+			<blockquote>
+				<p>
+					&ldquo;{model.text}&rdquo;
+				</p>
+				<p><cite>{model.title} ({model.subtitle})</cite></p>
+
+				{model.isFree ?? ''}
+				{model.isFree == '🔴' ? 'Still under arrest' : ''}
+				{model.isFree == '🟡' ? 'In Exile' : ''}
+				{model.isFree == '🟢' ? 'Currently free' : ''}
+				<p>Arrested: {model.arrestedFor ?? ''}</p>
 				<a href={model.url} target="_blank" title={model.title}>
 					<h6>
 						{model.moreText}
@@ -36,9 +42,16 @@
 							<use xlink:href="#fa-external-link" />
 						</svg>
 					</h6>
-					</a>
-				</blockquote>
-			
+				</a>
+				<a href={model.contentUrl} target="_blank" title={model.title}>
+					<h6>
+						Content that got {model.title} arrested
+						<svg class="fa-external-link">
+							<use xlink:href="#fa-external-link" />
+						</svg>
+					</h6>
+				</a>
+			</blockquote>
 		</div>
 	</div>
 	<!-- .end .wrap -->

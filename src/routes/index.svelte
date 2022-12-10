@@ -2,36 +2,24 @@
 	<section class="fullscreen bg-blue aligncenter">
 		<div class="embed dark">
 			<video autoplay loop muted poster="/assets/img/forground/landing.png">
-				<source src="/assets/vid/somaliland2.mp4" type="video/mp4" />
+				<source src="/assets/vid/freedom.mp4" type="video/mp4" />
 			</video>
 		</div>
 		<!-- .end .embed -->
 		<!-- .wrap = container (width: 90%) -->
 		<div class="wrap">
-			<h1><strong>Somaliland Recognition</strong></h1>
-			<h4>A portal for Somaliland advocates and friends</h4>
+			<h1><strong>Somaliland Freedom</strong></h1>
+			<h4>Support Somaillanders who have been opressed for expressing their mind.</h4>
 			<p class="text-symbols">* * *</p>
 
 			<p>
-				<a class="button ghost" href="/fire" title="2022 Hargeisa Inferno">
-					2022 Hargeisa Inferno</a
-				>
-				<a class="button ghost" href="/world" title="Somaliland Supporters">
-					Somaliland Supporters</a
-				>
+				<a class="button ghost" href="/detainees" title="Opinion Detainees">Opinion Detainees</a>
 
 				<a
 					class="button ghost"
-					href="https://youtube.com/playlist?list=PLnzGXugYZ3HTh_wZW39TuEkN01S0BP4AA"
-					target="blank"
-					title="Somaliland Recognition Playlist">Somaliland Playlist</a
-				>
-
-				<a
-					class="button ghost"
-					href="https://www.somalilandprofile.com/"
+					href="http://hrcsomaliland.org/category/updates/"
 					target="_blank"
-					title="Country Profile">Country Profile</a
+					title="HRC Somaliland">HRC Somaliland</a
 				>
 			</p>
 		</div>

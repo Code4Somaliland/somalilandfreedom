@@ -1,4 +1,4 @@
-import { StatementModel } from '../Models/statementModel';
+import { DetaineeStatus, StatementModel } from '../Models/statementModel';
 export const statementList: StatementModel[] = [
     new StatementModel({
         modelName: "ahmed-daud",
@@ -8,7 +8,7 @@ export const statementList: StatementModel[] = [
         subtitle: `Opposition party member`,
         image: `/assets/img/forground/ahmed-daud.jpg`,
         imageStyle: `max-width: 50%;"`,
-        isFree: `🔴`,
+        detaineeStatus: DetaineeStatus.Detained,
         arrestedFor: 'Since 24 Nov 2022',
         moreText: `Read News coverage`,
         contentUrl: `https://www.facebook.com/ahmed.daud2/posts/pfbid02xqFa25RwvBVLy1S7YivMwgppwdHPDCtdtr6SPfgRuyux1txsTovB5N4SaXKUnVLkl`
@@ -22,7 +22,7 @@ export const statementList: StatementModel[] = [
         subtitle: `High school student`,
         image: `/assets/img/forground/nada-galow.jpg`,
         imageStyle: `max-width: 50%;"`,
-        isFree: `🟢`,
+        detaineeStatus: DetaineeStatus.Free,
         arrestedFor: '14 days (Nov 2022)',
         moreText: `Read News coverage`,
         contentUrl: `https://www.facebook.com/haldornada.galow/posts/pfbid0kihnUJUqJrxSV2Cj3FBzGoXxDkooT7CQ7HmtkKh6ZkBYofbTLZv5yR3W1iGjV6Vil`
@@ -35,7 +35,7 @@ export const statementList: StatementModel[] = [
         subtitle: `Opposition Supporter`,
         image: `/assets/img/forground/mohamed-khayre.png`,
         imageStyle: `max-width: 50%;"`,
-        isFree: `🟢`,
+        detaineeStatus: DetaineeStatus.Free,
         arrestedFor: '50 days (Aug 2022)',
         contentUrl: `https://www.facebook.com/maxamed.khayre.319/posts/pfbid02yUvqemB6NHN4BdWsgBMTuzHtrFjPnbffhSjJVw2x4MhduaSAFkqTMWiZFtfEnaHWl`,
         moreText: `Watch News coverage`
@@ -48,22 +48,20 @@ export const statementList: StatementModel[] = [
         subtitle: `Somaliland Poet`,
         image: `/assets/img/forground/abdi-abees.jpg`,
         imageStyle: `max-width: 50%;"`,
-        isFree: `🟡`,
+        detaineeStatus: DetaineeStatus.InExile,
         arrestedFor: `38 days (Jan 2019)`,
         moreText: `Read News coverage`,
         contentUrl: `https://www.youtube.com/watch?v=UrfvR2Wq5Yg`
     }),
     new StatementModel({
         modelName: "more",
-        text: `Do you know opinion detainees that should be on this link? Check fill the form blow and we will be in touch`,
-        url: `https://forms.gle/oxFQAbthCy22gh439`,
-        title: ``,
+        text: `Do you know opinion detainees that should be on this page? Please fill the form blow and we will be in touch`,
+        url: `https://forms.gle/yvmPUpeYEvk8Aq27A`,
+        title: `Add to Freedom List`,
         subtitle: ``,
         image: `/assets/img/forground/more.webp`,
         imageStyle: `max-width: 50%;"`,
-        isFree: ``,
-        arrestedFor: ``,
-        moreText: `Fill the form`,
+        moreText: `Add to Freedom List`,
         contentUrl: ``
     }),
 

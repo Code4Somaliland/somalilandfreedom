@@ -1,0 +1,22 @@
+.demo-wrap {
+    position: relative;
+}
+
+.demo-wrap:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-image: url('../assets/img/background/jail.webp');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+.demo-content {
+    position: relative;
+}

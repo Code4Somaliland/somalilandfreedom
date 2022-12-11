@@ -30,8 +30,14 @@
 					<li>
 						<div>
 							<h2>
-								<span>{model.getArrestPeriod()}<sup> Days Arrested</sup></span>
+								<span>{model.getArrestPeriod()}<sup> Days</sup></span>
 							</h2>
+						</div>
+						<div>
+							<h6>
+								Arrested: {model.arrestStart.toDateString()}
+							</h6>
+							<p />
 						</div>
 					</li>
 					<li>

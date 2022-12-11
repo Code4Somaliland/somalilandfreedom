@@ -10,10 +10,11 @@ export class StatementModel {
     readonly moreText: string;
     readonly subtitle: string;
     readonly modelName: modelNames;
-    readonly arrestState: number;
-    readonly arrestEnd: number;
+    readonly arrestStart: Date;
+    readonly arrestEnd: Date;
     readonly contentUrl: string;
     readonly detaineeStatus: DetaineeStatus;
+    readonly caseHighlight: string
     constructor(init?: Partial<StatementModel>) {
         Object.assign(this, init);
     }
@@ -34,6 +35,11 @@ export class StatementModel {
             [DetaineeStatus.Free]: 'Free',
         }
         return statusText[this.detaineeStatus]
+    }
+
+    public getArrestPeriod(): number {
+        const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+        return Math.round(Math.abs((Number(this.arrestEnd) - Number(this.arrestStart)) / oneDay));
     }
 }
 

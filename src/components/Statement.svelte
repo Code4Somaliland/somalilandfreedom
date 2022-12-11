@@ -30,22 +30,18 @@
 					<li>
 						<div>
 							<h2>
-								<span>500<sup>+</sup></span>
-								SVG Icons
+								<span>{model.getArrestPeriod()}<sup> Days Arrested</sup></span>
 							</h2>
-							Font Awesome Kit.
 						</div>
 					</li>
 					<li>
 						<div>
 							<h2>
-								<svg class="fa-text-height">
-									<use xlink:href="#fa-text-height" />
+								<svg class="fa-suitcase">
+									<use xlink:href="#fa-suitcase" />
 								</svg>
-								{model.arrestedFor ? 'Arrested' : ''}
+								{model.caseHighlight}
 							</h2>
-							<h6>{model.arrestedFor ?? ''}</h6>
-							<h6>Use multiples of 8.</h6>
 						</div>
 					</li>
 				</ul>

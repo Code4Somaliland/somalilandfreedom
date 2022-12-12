@@ -1,4 +1,4 @@
-export type modelNames = '' | '~more' | 'ahmed-daud' | 'mohamed-khayre' | 'nada-galow' | 'abdi-abees' | 'abdi-malik';
+export type modelNames = '' | 'zzz-more' | 'ahmed-daud' | 'mohamed-khayre' | 'nada-galow' | 'abdi-abees' | 'abdi-malik';
 export enum DetaineeStatus { Detained = 1, InExile, Free }
 export class StatementModel {
     readonly text: string;

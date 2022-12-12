@@ -61,7 +61,7 @@ export const statementList: StatementModel[] = [
         caseHighlight: `Physical attack. No Warrants. Accused of “spreading false information and anti-national propaganda”, and “criminal defamation”`
     }),
     new StatementModel({
-        modelName: "~more",
+        modelName: "zzz-more",
         text: `Do you know opinion detainees that should be on this page? Please fill the form blow and we will be in touch`,
         url: `https://forms.gle/yvmPUpeYEvk8Aq27A`,
         title: `Add to Freedom List`,

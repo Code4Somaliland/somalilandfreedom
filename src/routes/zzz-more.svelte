@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { statementList } from '../data/statementList';
 	import Statement from '../components/Statement.svelte';
-	let model = statementList.find((model) => model.modelName === 'more');
+	let model = statementList.find((model) => model.modelName === 'zzz-more');
 </script>
 
 <Statement {model} />

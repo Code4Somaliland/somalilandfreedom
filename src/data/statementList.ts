@@ -1,22 +1,6 @@
 import { DetaineeStatus, StatementModel } from '../Models/statementModel';
 export const statementList: StatementModel[] = [
     new StatementModel({
-        modelName: "ahmed-daud",
-        text: `As per Somaliland Human Right Centre, Ahmed Daud was arrested over a facebook post where he only said: the president fits a Khat dealer job than a president.`,
-        url: `https://somalilandchronicle.com/2022/12/05/the-arbitrary-detention-of-ahmed-mohamed-abdi-in-hargeisa-somaliland/?fbclid=IwAR3K2RQqwuHugyB0msYjvgOCw5VedyAxwWTQtIgc_gfMtQfe0xzzbVxD91I`,
-        title: `Ahmed Daud`,
-        subtitle: `Opposition party member`,
-        image: `/assets/img/forground/ahmed-daud.jpg`,
-        imageStyle: `max-width: 50%;"`,
-        detaineeStatus: DetaineeStatus.Detained,
-        arrestStart: new Date('2022-11-24'),
-        arrestEnd: new Date(),
-        moreText: `Read News coverage`,
-        contentUrl: `https://www.facebook.com/ahmed.daud2/posts/pfbid02xqFa25RwvBVLy1S7YivMwgppwdHPDCtdtr6SPfgRuyux1txsTovB5N4SaXKUnVLkl`,
-        caseHighlight: `Physical attack. No Warrants. Accused of President Defamation using Penal Code`
-
-    }),
-    new StatementModel({
         modelName: "nada-galow",
         text: `As per MP Mohamed Abib, Nada crime was expressing political opinion on social media`,
         url: `https://www.facebook.com/hamse.khaire/videos/460370726221425`,
@@ -62,7 +46,22 @@ export const statementList: StatementModel[] = [
         caseHighlight: `Physical attack. No Warrants. Accused of government Defamation`
     }),
     new StatementModel({
-        modelName: "more",
+        modelName: "abdi-malik",
+        text: ` Abdimalik was held in connection with an altercation over social media with the president when he alleged that the management of Barwaaqo University was spreading Christianity.`,
+        url: `https://www.amnesty.org/en/location/africa/east-africa-the-horn-and-great-lakes/somalia/report-somalia/#:~:text=released%20without%20charge.-,On%2019%20August%2C,-the%20authorities%20in`,
+        title: `Abdimalik Coldon`,
+        subtitle: `Journalist`,
+        image: `/assets/img/forground/Abdimalik.jpg`,
+        imageStyle: `max-width: 50%;"`,
+        detaineeStatus: DetaineeStatus.Detained,
+        arrestStart: new Date('2021-08-19'),
+        arrestEnd: new Date(),
+        moreText: `Read News coverage`,
+        contentUrl: `https://www.youtube.com/watch?v=DDeG0GRQ6x8`,
+        caseHighlight: `Physical attack. No Warrants. Accused of “spreading false information and anti-national propaganda”, and “criminal defamation”`
+    }),
+    new StatementModel({
+        modelName: "~more",
         text: `Do you know opinion detainees that should be on this page? Please fill the form blow and we will be in touch`,
         url: `https://forms.gle/yvmPUpeYEvk8Aq27A`,
         title: `Add to Freedom List`,
@@ -72,5 +71,20 @@ export const statementList: StatementModel[] = [
         moreText: `Add to Freedom List`,
         contentUrl: ``
     }),
+    new StatementModel({
+        modelName: "ahmed-daud",
+        text: `As per Somaliland Human Right Centre, Ahmed Daud was arrested over a facebook post where he only said: the president fits a Khat dealer job than a president.`,
+        url: `https://somalilandchronicle.com/2022/12/05/the-arbitrary-detention-of-ahmed-mohamed-abdi-in-hargeisa-somaliland/?fbclid=IwAR3K2RQqwuHugyB0msYjvgOCw5VedyAxwWTQtIgc_gfMtQfe0xzzbVxD91I`,
+        title: `Ahmed Daud`,
+        subtitle: `Opposition party member`,
+        image: `/assets/img/forground/ahmed-daud.jpg`,
+        imageStyle: `max-width: 50%;"`,
+        detaineeStatus: DetaineeStatus.Detained,
+        arrestStart: new Date('2022-11-24'),
+        arrestEnd: new Date(),
+        moreText: `Read News coverage`,
+        contentUrl: `https://www.facebook.com/ahmed.daud2/posts/pfbid02xqFa25RwvBVLy1S7YivMwgppwdHPDCtdtr6SPfgRuyux1txsTovB5N4SaXKUnVLkl`,
+        caseHighlight: `Physical attack. No Warrants. Accused of President Defamation using Penal Code`
 
+    }),
 ]

@@ -1,7 +1,6 @@
 <script lang="ts">
 	import type { StatementModel } from 'src/Models/statementModel';
 	export let model: StatementModel;
-	const statusColor = model.isFree == '🔴';
 </script>
 
 <svelte:head>

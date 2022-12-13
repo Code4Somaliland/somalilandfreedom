@@ -91,6 +91,52 @@ export const statementList: StatementModel[] = [
         contentUrl: `https://www.facebook.com/ahmed.daud2/posts/pfbid02xqFa25RwvBVLy1S7YivMwgppwdHPDCtdtr6SPfgRuyux1txsTovB5N4SaXKUnVLkl`,
         caseHighlight: `Physical attack. No Warrants. Accused of President Defamation using Penal Code`,
         type: DetaineeType.Political
-
     }),
+    new StatementModel({
+        modelName: "ilig",
+        text: `Mohamed Abdi Ilig and Abdijabar Mohamed Hussein should never have been arrested for simply covering a breaking news story in real time`,
+        url: `https://cpj.org/2022/05/two-somali-journalists-sentenced-to-16-months-in-jail-for-false-news/`,
+        title: `Mohamed Abdi Ilig`,
+        subtitle: `Journalist`,
+        image: `/assets/img/forground/ilig.jpg`,
+        imageStyle: `max-width: 50%;"`,
+        detaineeStatus: DetaineeStatus.Free,
+        arrestStart: new Date('2022-04-13'),
+        arrestEnd: new Date('2022-07-02'),
+        moreText: `Read News coverage`,
+        caseHighlight: `Physical attack. No Warrants. Accused of “subversive or anti-national propaganda” or publishing false news`,
+        type: DetaineeType.Journalist
+    }),
+    new StatementModel({
+        modelName: "abdi-jabar",
+        text: `Mohamed Abdi Ilig and Abdijabar Mohamed Hussein should never have been arrested for simply covering a breaking news story in real time`,
+        url: `https://cpj.org/2022/05/two-somali-journalists-sentenced-to-16-months-in-jail-for-false-news/`,
+        title: `Abdijabar Mohamed Hussein`,
+        subtitle: `Journalist`,
+        image: `/assets/img/forground/abdi-jabar.png`,
+        imageStyle: `max-width: 50%;"`,
+        detaineeStatus: DetaineeStatus.Free,
+        arrestStart: new Date('2022-04-13'),
+        arrestEnd: new Date('2022-07-02'),
+        moreText: `Read News coverage`,
+        caseHighlight: `Physical attack. No Warrants. Accused of “subversive or anti-national propaganda” or publishing false news`,
+        type: DetaineeType.Journalist
+    }),
+    new StatementModel({
+        modelName: "sacad-fariid",
+        text: `Nearly 30 police and security sector officers nightly raided his home terrorizing family without due process and infringed privacy rights since he wasn't armed`,
+        url: `https://www.facebook.com/ali.yussuf.92/posts/pfbid04x5ZRvvSQySc8uT7G1tQXgDJ2caqi8D54KNhsRSjfhGpH8pKqR2bZ842ngZGputil`,
+        title: `Sacad Fariid Cali`,
+        subtitle: `Driver`,
+        image: `/assets/img/forground/sacad-fariid.jpg`,
+        imageStyle: `max-width: 50%;"`,
+        detaineeStatus: DetaineeStatus.Detained,
+        arrestStart: new Date('2022-12-12'),
+        arrestEnd: new Date(),
+        moreText: `Read News coverage`,
+        caseHighlight: `Physical attack. No Warrants. Accused of “subversive or anti-national propaganda” or publishing false news`,
+        contentUrl: `https://www.facebook.com/sacad.algaddidi/posts/pfbid0VzuEt2AJWfbZF4CQq7VC35NzLnwyomRZKTBCjynoBecceJgXhj7U3dWfkEK7KQaul`,
+
+        type: DetaineeType.Political
+    })
 ]

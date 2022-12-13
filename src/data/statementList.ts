@@ -136,7 +136,21 @@ export const statementList: StatementModel[] = [
         moreText: `Read News coverage`,
         caseHighlight: `Physical attack. No Warrants. Accused of “subversive or anti-national propaganda” or publishing false news`,
         contentUrl: `https://www.facebook.com/sacad.algaddidi/posts/pfbid0VzuEt2AJWfbZF4CQq7VC35NzLnwyomRZKTBCjynoBecceJgXhj7U3dWfkEK7KQaul`,
-
+        type: DetaineeType.Political
+    }),
+    new StatementModel({
+        modelName: "cukuse",
+        text: `Police arrested Cukuse and 11 other politicians during an anti-government protest in Hargeisa, the capital of Somaliland.`,
+        url: `https://www.hiiraan.com/news4/2022/July/186897/somaliland_releases_twelve_imprisoned_opposition_figures.aspx`,
+        title: `Abdullahi Mohamed (Cukuse)`,
+        subtitle: `Politician`,
+        image: `/assets/img/forground/cukuse.jpg`,
+        imageStyle: `max-width: 50%;"`,
+        detaineeStatus: DetaineeStatus.Free,
+        arrestStart: new Date('2022-06-09'),
+        arrestEnd: new Date('2022-07-05'),
+        moreText: `Read News coverage`,
+        caseHighlight: `No Warrants. Accused of <not known> Cukuse is a senior official in Wadani opposition party`,
         type: DetaineeType.Political
     })
 ]

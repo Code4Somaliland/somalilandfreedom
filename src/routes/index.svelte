@@ -9,15 +9,13 @@
 		<!-- .wrap = container (width: 90%) -->
 		<div class="wrap">
 			<h1><strong>Somaliland Freedom</strong></h1>
-			<h4>Support Somaillanders who have been opressed for expressing their mind.</h4>
+			<h4>Support Somaillanders who have been oppressed for expressing their mind.</h4>
 			<p class="text-symbols">* * *</p>
 
 			<p>
-				<a class="button ghost" href="/detainees" title="Political Detainees">Political Detainees</a
+				<a class="button ghost" href="/political" title="Political Prisoners">Political Prisoners</a
 				>
-				<a class="button ghost" href="/sentenced-before" title="Previously Sentenced"
-					>Previously Sentenced</a
-				>
+				<a class="button ghost" href="/journalists" title="journalists">Arrested Journalists</a>
 
 				<a
 					class="button ghost"

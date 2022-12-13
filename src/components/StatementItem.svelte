@@ -15,6 +15,8 @@
 				{#if model.detaineeStatus}
 					<p><b>{model.getArrestPeriod()}</b> Days</p>
 					<p>Status: <b style="color:{model.getColorStyle()}">{model.getStatusText()}</b></p>
+				{:else}
+					<p style="padding-bottom:71px;" />
 				{/if}
 			</figcaption>
 		</figure>

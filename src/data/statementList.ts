@@ -1,6 +1,17 @@
 import { DetaineeStatus, StatementModel } from '../Models/statementModel';
 export const statementList: StatementModel[] = [
     new StatementModel({
+        modelName: "more",
+        text: `Do you know opinion detainees that should be on this page? Please fill the form blow and we will be in touch`,
+        url: `https://forms.gle/yvmPUpeYEvk8Aq27A`,
+        title: `Add to Freedom List`,
+        subtitle: ``,
+        image: `/assets/img/forground/more.webp`,
+        imageStyle: `max-width: 50%;"`,
+        moreText: `Add to Freedom List`,
+        contentUrl: ``
+    }),
+    new StatementModel({
         modelName: "nada-galow",
         text: `As per MP Mohamed Abib, Nada crime was expressing political opinion on social media`,
         url: `https://www.facebook.com/hamse.khaire/videos/460370726221425`,
@@ -59,17 +70,6 @@ export const statementList: StatementModel[] = [
         moreText: `Read News coverage`,
         contentUrl: `https://www.youtube.com/watch?v=DDeG0GRQ6x8`,
         caseHighlight: `Physical attack. No Warrants. Accused of “spreading false information and anti-national propaganda”, and “criminal defamation”`
-    }),
-    new StatementModel({
-        modelName: "zzz-more",
-        text: `Do you know opinion detainees that should be on this page? Please fill the form blow and we will be in touch`,
-        url: `https://forms.gle/yvmPUpeYEvk8Aq27A`,
-        title: `Add to Freedom List`,
-        subtitle: ``,
-        image: `/assets/img/forground/more.webp`,
-        imageStyle: `max-width: 50%;"`,
-        moreText: `Add to Freedom List`,
-        contentUrl: ``
     }),
     new StatementModel({
         modelName: "ahmed-daud",

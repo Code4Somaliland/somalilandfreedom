@@ -13,7 +13,11 @@
 			<p class="text-symbols">* * *</p>
 
 			<p>
-				<a class="button ghost" href="/detainees" title="Opinion Detainees">Opinion Detainees</a>
+				<a class="button ghost" href="/detainees" title="Political Detainees">Political Detainees</a
+				>
+				<a class="button ghost" href="/sentenced-before" title="Previously Sentenced"
+					>Previously Sentenced</a
+				>
 
 				<a
 					class="button ghost"

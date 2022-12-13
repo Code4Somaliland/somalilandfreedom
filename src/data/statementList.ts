@@ -1,15 +1,16 @@
-import { DetaineeStatus, StatementModel } from '../Models/statementModel';
+import { DetaineeStatus, DetaineeType, StatementModel } from '../Models/statementModel';
 export const statementList: StatementModel[] = [
     new StatementModel({
         modelName: "more",
-        text: `Do you know opinion detainees that should be on this page? Please fill the form blow and we will be in touch`,
+        text: `Do you know political detainees that should be on this page? Please fill the form blow and we will be in touch`,
         url: `https://forms.gle/yvmPUpeYEvk8Aq27A`,
         title: `Add to Freedom List`,
         subtitle: ``,
         image: `/assets/img/forground/more.webp`,
         imageStyle: `max-width: 50%;"`,
         moreText: `Add to Freedom List`,
-        contentUrl: ``
+        contentUrl: ``,
+        type: DetaineeType.All
     }),
     new StatementModel({
         modelName: "nada-galow",
@@ -24,7 +25,8 @@ export const statementList: StatementModel[] = [
         arrestEnd: new Date('2022-11-27'),
         moreText: `Read News coverage`,
         contentUrl: `https://www.facebook.com/haldornada.galow/posts/pfbid0kihnUJUqJrxSV2Cj3FBzGoXxDkooT7CQ7HmtkKh6ZkBYofbTLZv5yR3W1iGjV6Vil`,
-        caseHighlight: `No Warrants. Accused of inciting protests`
+        caseHighlight: `No Warrants. Accused of inciting protests`,
+        type: DetaineeType.NeverSentencedBefore
     }),
     new StatementModel({
         modelName: "mohamed-khayre",
@@ -39,7 +41,8 @@ export const statementList: StatementModel[] = [
         arrestEnd: new Date('2022-10-10'),
         contentUrl: `https://www.facebook.com/maxamed.khayre.319/posts/pfbid02yUvqemB6NHN4BdWsgBMTuzHtrFjPnbffhSjJVw2x4MhduaSAFkqTMWiZFtfEnaHWl`,
         moreText: `Watch News coverage`,
-        caseHighlight: `Physical attack. No Warrants. Accused of inciting protests & Defamation`
+        caseHighlight: `Physical attack. No Warrants. Accused of inciting protests & Defamation`,
+        type: DetaineeType.NeverSentencedBefore
     }),
     new StatementModel({
         modelName: "abdi-abees",
@@ -54,7 +57,8 @@ export const statementList: StatementModel[] = [
         arrestEnd: new Date('2019-02-19'),
         moreText: `Read News coverage`,
         contentUrl: `https://www.youtube.com/watch?v=UrfvR2Wq5Yg`,
-        caseHighlight: `Physical attack. No Warrants. Accused of government Defamation`
+        caseHighlight: `Physical attack. No Warrants. Accused of government Defamation`,
+        type: DetaineeType.NeverSentencedBefore
     }),
     new StatementModel({
         modelName: "abdi-malik",
@@ -69,7 +73,8 @@ export const statementList: StatementModel[] = [
         arrestEnd: new Date(),
         moreText: `Read News coverage`,
         contentUrl: `https://www.youtube.com/watch?v=DDeG0GRQ6x8`,
-        caseHighlight: `Physical attack. No Warrants. Accused of “spreading false information and anti-national propaganda”, and “criminal defamation”`
+        caseHighlight: `Physical attack. No Warrants. Accused of “spreading false information and anti-national propaganda”, and “criminal defamation”`,
+        type: DetaineeType.Sentenced
     }),
     new StatementModel({
         modelName: "ahmed-daud",
@@ -84,7 +89,8 @@ export const statementList: StatementModel[] = [
         arrestEnd: new Date(),
         moreText: `Read News coverage`,
         contentUrl: `https://www.facebook.com/ahmed.daud2/posts/pfbid02xqFa25RwvBVLy1S7YivMwgppwdHPDCtdtr6SPfgRuyux1txsTovB5N4SaXKUnVLkl`,
-        caseHighlight: `Physical attack. No Warrants. Accused of President Defamation using Penal Code`
+        caseHighlight: `Physical attack. No Warrants. Accused of President Defamation using Penal Code`,
+        type: DetaineeType.NeverSentencedBefore
 
     }),
 ]

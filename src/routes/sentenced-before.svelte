@@ -1,9 +1,9 @@
 <script>
-	import { DetaineeType } from '../Models/statementModel';
+	import { DetaineeStatus, DetaineeType } from '../Models/statementModel';
 	import StatementItem from '../components/StatementItem.svelte';
 	import { statementList } from '../data/statementList';
 	let orderedStatementList = statementList
-		.filter((s) => s.type === DetaineeType.NeverSentencedBefore)
+		.filter((s) => s.type === DetaineeType.Sentenced)
 		.sort(function (a, b) {
 			return b.arrestStart.toISOString().localeCompare(a.arrestStart.toISOString());
 		});
@@ -14,7 +14,7 @@
 </script>
 
 <svelte:head>
-	<title>Political Detainees</title>
+	<title>Previously Sentenced</title>
 </svelte:head>
 
 <article id="webslides">
@@ -22,8 +22,11 @@
 		<div class="demo-content">
 			<section>
 				<div class="wrap">
-					<h3>Political Detainees</h3>
-					<h6 style="margin-bottom: 15px;"><i>who never been sentenced on a crime</i></h6>
+					<h3>Previously Sentenced</h3>
+					<h6 style="margin-bottom: 15px;">
+						<i>for a crime but facing injustice in a new case</i>
+					</h6>
+
 					<ul class="flexblock gallery">
 						{#each orderedStatementList as model}
 							<StatementItem {model} />

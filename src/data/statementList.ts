@@ -127,7 +127,7 @@ export const statementList: StatementModel[] = [
         text: `Nearly 30 police and security sector officers nightly raided his home terrorizing family without due process and infringed privacy rights since he wasn't armed`,
         url: `https://www.facebook.com/ali.yussuf.92/posts/pfbid04x5ZRvvSQySc8uT7G1tQXgDJ2caqi8D54KNhsRSjfhGpH8pKqR2bZ842ngZGputil`,
         title: `Sacad Fariid Cali`,
-        subtitle: `Driver`,
+        subtitle: `Diver`,
         image: `/assets/img/forground/sacad-fariid.jpg`,
         imageStyle: `max-width: 50%;"`,
         detaineeStatus: DetaineeStatus.Detained,
@@ -151,6 +151,21 @@ export const statementList: StatementModel[] = [
         arrestEnd: new Date('2022-07-05'),
         moreText: `Read News coverage`,
         caseHighlight: `No Warrants. Accused of <not known> Cukuse is a senior official in Wadani opposition party`,
+        type: DetaineeType.Political
+    }),
+    new StatementModel({
+        modelName: "cade-gude",
+        text: `Sultan Ade Gude, one of Somaliland's traditional leaders, has been arrested in Hargeysa for sympathizing with an opposition party.`,
+        url: `https://hadhwanaagnews.ca/mobile/articles/34302/Suldan-Ade-Gude-Was-Hijacked-By-Dictators-Son-Abdi-Shotaly`,
+        title: `Suldaan Ahmed Ade-Gude`,
+        subtitle: `Traditional leader`,
+        image: `/assets/img/forground/cade-gude.jpg`,
+        imageStyle: `max-width: 50%;"`,
+        detaineeStatus: DetaineeStatus.Free,
+        arrestStart: new Date('2022-08-21'),
+        arrestEnd: new Date('2022-09-26'),
+        moreText: `Read News coverage`,
+        caseHighlight: `No Warrants or charges. Accused of <not known> Cade is a member of Wadani opposition party`,
         type: DetaineeType.Political
     })
 ]

@@ -68,7 +68,7 @@ export const statementList: StatementModel[] = [
         subtitle: `Journalist`,
         image: `/assets/img/forground/Abdimalik.jpg`,
         imageStyle: `max-width: 50%;"`,
-        detaineeStatus: DetaineeStatus.Detained,
+        detaineeStatus: DetaineeStatus.Free,
         arrestStart: new Date('2021-08-19'),
         arrestEnd: new Date('2022-12-21'),
         moreText: `Read News coverage`,

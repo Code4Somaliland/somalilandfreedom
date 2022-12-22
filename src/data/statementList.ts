@@ -70,7 +70,7 @@ export const statementList: StatementModel[] = [
         imageStyle: `max-width: 50%;"`,
         detaineeStatus: DetaineeStatus.Detained,
         arrestStart: new Date('2021-08-19'),
-        arrestEnd: new Date(),
+        arrestEnd: new Date('2022-12-21'),
         moreText: `Read News coverage`,
         contentUrl: `https://www.youtube.com/watch?v=DDeG0GRQ6x8`,
         caseHighlight: `Physical attack. No Warrants. Accused of “spreading false information and anti-national propaganda”, and “criminal defamation”`,

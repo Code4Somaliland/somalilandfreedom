@@ -61,22 +61,6 @@ export const statementList: StatementModel[] = [
         type: DetaineeType.Political
     }),
     new StatementModel({
-        modelName: "abdi-malik",
-        text: ` Abdimalik was held in connection with an altercation over social media with the president when he alleged that the management of Barwaaqo University was spreading Christianity.`,
-        url: `https://www.amnesty.org/en/location/africa/east-africa-the-horn-and-great-lakes/somalia/report-somalia/#:~:text=released%20without%20charge.-,On%2019%20August%2C,-the%20authorities%20in`,
-        title: `Abdimalik Coldon`,
-        subtitle: `Journalist`,
-        image: `/assets/img/forground/Abdimalik.jpg`,
-        imageStyle: `max-width: 50%;"`,
-        detaineeStatus: DetaineeStatus.Free,
-        arrestStart: new Date('2021-08-19'),
-        arrestEnd: new Date('2022-12-21'),
-        moreText: `Read News coverage`,
-        contentUrl: `https://www.youtube.com/watch?v=DDeG0GRQ6x8`,
-        caseHighlight: `Physical attack. No Warrants. Accused of “spreading false information and anti-national propaganda”, and “criminal defamation”`,
-        type: DetaineeType.Journalist
-    }),
-    new StatementModel({
         modelName: "ahmed-daud",
         text: `As per Somaliland Human Right Centre, Ahmed Daud was arrested over a facebook post where he only said: the president fits a Khat dealer job than a president.`,
         url: `https://somalilandchronicle.com/2022/12/05/the-arbitrary-detention-of-ahmed-mohamed-abdi-in-hargeisa-somaliland/?fbclid=IwAR3K2RQqwuHugyB0msYjvgOCw5VedyAxwWTQtIgc_gfMtQfe0xzzbVxD91I`,

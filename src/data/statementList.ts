@@ -63,7 +63,7 @@ export const statementList: StatementModel[] = [
     new StatementModel({
         modelName: "ahmed-daud",
         text: `As per Somaliland Human Right Centre, Ahmed Daud was arrested over a facebook post where he only said: the president fits a Khat dealer job than a president.`,
-        url: `https://somalilandchronicle.com/2022/12/05/the-arbitrary-detention-of-ahmed-mohamed-abdi-in-hargeisa-somaliland/?fbclid=IwAR3K2RQqwuHugyB0msYjvgOCw5VedyAxwWTQtIgc_gfMtQfe0xzzbVxD91I`,
+        url: `https://kaahparty.org/ahmeddaud/`,
         title: `Ahmed Daud`,
         subtitle: `Opposition party member`,
         image: `/assets/img/forground/ahmed-daud.jpg`,

@@ -62,7 +62,7 @@
 						</a>
 						{#if model.contentUrl}
 							<a href={model.contentUrl} target="_blank" title={model.title}>
-								<span class="button ghost"> The "prohibited" Opinion</span>
+								<span class="button ghost"> The "prohibited" content</span>
 							</a>
 						{/if}
 					</p>

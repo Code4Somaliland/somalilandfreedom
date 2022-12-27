@@ -73,7 +73,7 @@ export const statementList: StatementModel[] = [
         arrestEnd: new Date(),
         moreText: `Read News coverage`,
         contentUrl: `https://www.facebook.com/ahmed.daud2/posts/pfbid02xqFa25RwvBVLy1S7YivMwgppwdHPDCtdtr6SPfgRuyux1txsTovB5N4SaXKUnVLkl`,
-        caseHighlight: `Physical attack. No Warrants. Accused of President Defamation using Penal Code`,
+        caseHighlight: `Physical attack. No Warrants. Accused of President Defamation using Somali Penal Code`,
         type: DetaineeType.Political
     }),
     new StatementModel({
@@ -151,5 +151,73 @@ export const statementList: StatementModel[] = [
         moreText: `Read News coverage`,
         caseHighlight: `No Warrants or charges. Accused of <not known> Cade is a member of Wadani opposition party`,
         type: DetaineeType.Political
+    }),
+    new StatementModel({
+        modelName: "6x-burco",
+        text: `62 mostly teen demonstrators have been detained in Burco and sent to Mandheera Prison`,
+        url: `https://www.youtube.com/watch?v=QiqSi2rGvbk`,
+        title: `62 Burco Youth`,
+        subtitle: `Demonstrators agaist delayed elections`,
+        image: `/assets/img/forground/6x-burco.jpg`,
+        imageStyle: `max-width: 50%;"`,
+        detaineeStatus: DetaineeStatus.Free,
+        arrestStart: new Date('2022-11-13'),
+        arrestEnd: new Date('2022-12-02'),
+        moreText: `Read News coverage`,
+        caseHighlight: `Physical attack. No Warrants. Accused of conducting protests`,
+        type: DetaineeType.Political,
+        moreLinks: [{
+            text: 'Release link',
+            url: 'https://www.youtube.com/watch?v=LB4NPweo41Y'
+        }]
+    }),
+    new StatementModel({
+        modelName: "wadani",
+        text: `Somaliland government released Khadar Hussein Abdi, Secretary of Waddani party and Barkhad Jama Hersi, the spokesperson of the same Party. The government also released Abdi Ibrahim Abduleh, the man who coined the widely used satirical word “Ila Meerayso”.`,
+        url: `https://somalilandstandard.com/somaliland-releases-imprisoned-opposition-officials`,
+        title: `Khadar Abdi & Barkhad Hersi`,
+        subtitle: `Opposition Leaders`,
+        image: `/assets/img/forground/barkhad-khadar.jpg`,
+        imageStyle: `max-width: 50%;"`,
+        detaineeStatus: DetaineeStatus.Free,
+        arrestStart: new Date('2019-11-17'),
+        arrestEnd: new Date('2019-11-28'),
+        moreText: `Read News coverage`,
+        caseHighlight: `No Warrants. Accused of conducting protests`,
+        type: DetaineeType.Political,
+        contentUrl: `https://twitter.com/Somaliweyn_/status/1196307471582806016`,
+        moreLinks: [{
+            text: 'Release link',
+            url: 'https://www.somalilandcurrent.com/somaliland-detained-wadani-officials-released/'
+        }]
+    }),
+    new StatementModel({
+        modelName: "jeesto",
+        text: `He was arrested after a comparison he made between Somaliland police force and Somalia police force. He is a social activist who uses social media to cast light on issues in Somaliland, including the comparison he made where the suggestion was the Somalia police force is more qualified than the Somaliland police force`,
+        url: `http://hrcsomaliland.org/the-human-rights-centre-condoms-the-arrest-and-detention-of-mahamoud-mohamed-haji-ibrahim-aka-jeesto/`,
+        title: `Mohamoud Jeesto`,
+        subtitle: `Graphic design artist`,
+        image: `/assets/img/forground/jeesto.jpg`,
+        imageStyle: `max-width: 50%;"`,
+        detaineeStatus: DetaineeStatus.Free,
+        arrestStart: new Date('2022-04-12'),
+        arrestEnd: new Date('2022-06-19'),
+        moreText: `Read News coverage`,
+        caseHighlight: `No Warrants. Accused of President Defamation using Somali Penal Code`,
+        type: DetaineeType.Political,
+        contentUrl: `https://www.facebook.com/permalink.php?story_fbid=1910025879196703&id=100005679285178`,
+        moreLinks: [{
+            text: 'still arrested',
+            url: 'https://twitter.com/hrcsomaliland/status/1531904965844811777'
+        }, {
+            text: 'Charges',
+            url: 'https://www.facebook.com/AbdisalaamGermany/posts/warcusub-maxamuud-jeesto-oo-ka-mida-dhalinyarada-burco-54-cisho-oo-uu-xidhnaa-ka/3335344486677824/'
+        }, {
+            text: 'Release link',
+            url: 'https://www.facebook.com/permalink.php?story_fbid=1960672647465359&id=100005679285178'
+        }, {
+            text: 'Release link',
+            url: 'https://www.facebook.com/permalink.php?story_fbid=1961497547382869&id=100005679285178'
+        }]
     })
 ]

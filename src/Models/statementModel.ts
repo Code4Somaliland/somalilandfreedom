@@ -1,7 +1,11 @@
 export type modelNames = '' | 'more' | 'ahmed-daud' | 'mohamed-khayre' | 'nada-galow' | 'abdi-abees' | 'abdi-malik' | 'ilig'
-    | 'abdi-jabar' | 'sacad-fariid' | 'cukuse' | 'cade-gude';
+    | 'abdi-jabar' | 'sacad-fariid' | 'cukuse' | 'cade-gude' | '6x-burco' | 'wadani' | 'jeesto';
 export enum DetaineeStatus { Detained = 1, InExile, Free }
 export enum DetaineeType { All = 1, Journalist, Political }
+export class MoreLinks {
+    readonly text: string;
+    readonly url: string;
+}
 export class StatementModel {
     readonly text: string;
     readonly url: string;
@@ -18,6 +22,7 @@ export class StatementModel {
     readonly detaineeStatus: DetaineeStatus;
     readonly caseHighlight: string
     readonly type: DetaineeType
+    readonly moreLinks: MoreLinks[]
     constructor(init?: Partial<StatementModel>) {
         Object.assign(this, init);
     }

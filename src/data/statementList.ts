@@ -190,6 +190,21 @@ export const statementList: StatementModel[] = [
             text: 'Release link',
             url: 'https://www.somalilandcurrent.com/somaliland-detained-wadani-officials-released/'
         }]
+    }), new StatementModel({
+        modelName: "busharo",
+        text: `Bushaaro Baanday, reports on Somaliland politics and posts critical commentary on her Facebook page.`,
+        url: `http://hrcsomaliland.org/2023/05/25/the-arbitrary-detention-of-bushaaro-ali-mohammed/`,
+        title: `Bushaaro Baanday`,
+        subtitle: `Freelancer`,
+        image: `/assets/img/forground/busharo.jpg`,
+        imageStyle: `max-width: 50%;"`,
+        detaineeStatus: DetaineeStatus.Detained,
+        arrestStart: new Date('2023-04-17'),
+        arrestEnd: new Date(),
+        moreText: `Read News coverage`,
+        caseHighlight: `No Warrants. Accused of seditious act against Somaliland government`,
+        type: DetaineeType.Journalist,
+        contentUrl: `https://www.facebook.com/profile/100044336713911/search/?q=ssc`
     }),
     new StatementModel({
         modelName: "jeesto",
